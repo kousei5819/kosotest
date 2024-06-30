@@ -100,7 +100,7 @@ p{
     }
     
     .book-btn img{
-        width: 95px;
+        width: 105px;
         height: auto;
     }
 }
@@ -1315,7 +1315,7 @@ picture img{
     margin: 0 auto;
 }
 
-.news-box-li{
+.news-box-top{
     margin-top: 50px;
 }
 
