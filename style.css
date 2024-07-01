@@ -904,7 +904,9 @@ picture img{
 }
 
 .pic02 img{
-    transform: translateY(-5px)!important;
+    transform: translateY(0px)!important;
+    vertical-align: top;
+    line-height: 0;
 }
 
 
