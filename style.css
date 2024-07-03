@@ -20,6 +20,11 @@ main{
     position: relative;
 }
 
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
 .common-cnt{
     width: 80vw;
     margin: 0 auto;
@@ -75,7 +80,7 @@ p{
     border-radius: 50px;
     background-color: #54433b;
     color: #f2fedc;
-    font-size: min(5vw, 25px);
+    font-size: min(5vw, 22px);
     text-align: center;
     max-width: 450px;
 }
@@ -125,6 +130,7 @@ header{
     width: 200px;
     height: auto;
     margin-left: 30px;
+    z-index: 9999;
 }
 
 .burger{
@@ -336,7 +342,7 @@ header{
     }
 
     .news-title h1{
-        font-size: 20px;
+        font-size: 23px;
         margin-bottom: 10px;
     }
 
@@ -421,6 +427,7 @@ about
 .about-box01-text h2,
 .about-box02-text h2{
     font-size: 30px;
+    color: #342611;
 }
 
 .about-box01-img img,
@@ -467,6 +474,7 @@ about
     line-height: 2;
     font-size: 15px;
     text-align: justify;
+    color: #342611;
 }
 
 @media screen and (max-width: 768px) {
@@ -566,7 +574,7 @@ sns
     text-align: center;
     margin: 0 auto;
     padding: 0 0 20px 0;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .sns-box-title h1{
@@ -740,6 +748,7 @@ sns
 
 .access-title h1{
     font-size: 30px;
+    color: #342611;
 }
 
 .access-box{
@@ -789,8 +798,9 @@ sns
 }
 
 .access-item{
-    padding-bottom: 40px;
-
+    padding-bottom: 30px;
+    line-height: 2;
+    color: #342611;
 }
 
 .access-item-01{
@@ -857,7 +867,7 @@ contact
 }
 
 .con-text p{
-    color: #504b3b;
+    color: #342611;
 }
 
 .con-btn{
@@ -906,7 +916,6 @@ picture img{
 .pic02 img{
     transform: translateY(0px)!important;
     vertical-align: top;
-    line-height: 0;
 }
 
 
@@ -1018,6 +1027,10 @@ picture img{
 }
 
 @media screen and (max-width: 768px){
+    .head-box{
+        padding-top: 70px;
+    }
+    
     .about-p-box01,
     .about-p-box02{
         flex-direction: column;
@@ -1052,14 +1065,16 @@ picture img{
 }
 
 .fee-item01{
-    background-color: #DBCDAD;
+    background-image: url(img/back_img02.png);
+    background-size: cover;
     border-radius: 15px;
     width: 100%;
     margin: 50px 0 0 0;
 }
 
 .fee-item02{
-    background-color: #DBCDAD;
+    background-image: url(img/back_img02.png);
+    background-size: cover;
     border-radius: 15px;
     width: 100%;
     margin: 10px 0;
@@ -1310,21 +1325,29 @@ picture img{
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 .news-box-cnt{
-    background-color: #d6c9a5;
+    background-image: url(img/back_img02.png);
+    background-size: cover;
     border-radius: 10px;
     padding: 40px 30px;
     max-width: 768px;
     margin: 0 auto;
+    color: #3D392D;
 }
 
 .news-box-top{
     margin-top: 50px;
 }
 
+.news-box-date{
+    font-size: 14px;
+    color: #f05e1c!important;
+}
+
 .news-box-head{
     margin-top: 5px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #000;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .news-box-img{
@@ -1333,10 +1356,17 @@ picture img{
 }
 
 .news-box-img img{
-    width: 100%;
     border-radius: 10px;
 }
 
 .news-box-text{
     margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .news-box-cnt{
+        padding: 30px 20px;
+    }
 }
