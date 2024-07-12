@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: "M PLUS Rounded 1c", sans-serif;;
+    font-family: "M PLUS Rounded 1c","Zen Maru Gothic", sans-serif;;
     /* font-family: "Kiwi Maru", serif; */
 }
 
@@ -85,6 +85,7 @@ p{
     max-width: 450px;
 }
 
+
 /* 予約ボタン */
 .book{
     position: fixed;
@@ -121,8 +122,8 @@ header{
     align-items: center;
     justify-content: space-between; 
     background-color: #e8e3d3;
-    /* background-image: url(img/back_img.png);
-    background-position: center; */
+    background-image: url(img/back_img.png);
+    background-position: center;
     position: fixed;
     z-index: 111;
 }
@@ -909,12 +910,7 @@ picture img{
     object-fit: contain;
 }
 
-.pic01 img{
-    transform: translateY(8px)!important;
-}
-
 .pic02 img{
-    transform: translateY(0px)!important;
     vertical-align: top;
 }
 
