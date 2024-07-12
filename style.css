@@ -124,6 +124,8 @@ header{
     background-position: center;
     position: fixed;
     z-index: 111;
+    top: 0;
+    left: 0;
 }
 
 .logo img{
@@ -581,34 +583,6 @@ sns
     font-family: "Nunito", sans-serif;
 }
 
-
-/* .sns-box-title h1::after,
-.con-box-title h1::after{
-    position: absolute;
-    content: "";
-    width: 6%;
-    height: 3px;
-    background-color: #feece2;
-    top: 50%;
-    right: 30vw;
-    transform: translateY('-50%');
-    border-radius: 5px;
-    max-width: 1300px;
-}
-
-.sns-box-title h1::before,
-.con-box-title h1::before{
-    position: absolute;
-    content: "";
-    width: 6%;
-    height: 3px;
-    background-color: #feece2;
-    top: 50%;
-    left: 30vw;
-    transform: translateY('-50%');
-    border-radius: 5px;
-} */
-
 .sns-box-title h1,
 .con-box-title h1{
     color: #F2FEDC;
@@ -639,7 +613,7 @@ sns
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: 80%;
+    width: 70%;
     margin: auto;
     /* max-width: 1000px; */
 }
