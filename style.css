@@ -117,15 +117,17 @@ p{
 
 header{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
+    height: 90px;
     background-image: url(img/back_img.png);
     background-position: center;
     position: fixed;
     z-index: 111;
-    top: 0;
-    left: 0;
+}
+
+.header-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 .logo img{
@@ -582,6 +584,8 @@ sns
 .sns-box-title h1{
     font-family: "Nunito", sans-serif;
 }
+
+
 
 .sns-box-title h1,
 .con-box-title h1{
