@@ -48,6 +48,8 @@ img{
     opacity: 0;
 }
 
+
+
 @media screen and (max-width: 465px){
     .sp-br{
         display: block;
@@ -128,6 +130,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+}
+
+.logo{
+    z-index: 9999;
 }
 
 .logo img{
@@ -902,7 +908,7 @@ picture img{
     padding-top: 90px;
 }
 
-.page-head{
+/* .page-head{
     width: 100%;
     height: min(20vh, 300px);
     background-image: url(img/page_head_test.png);
@@ -913,13 +919,31 @@ picture img{
     justify-content: center;
     align-items: center;
 
+} */
+
+.page-mv-about{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/DSC02249.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
 }
 
-.page-head h2{
+.page-mv-about h2{
+    color: #fff;
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+/* .page-head h2{
     font-size: min(8vw, 40px);
     letter-spacing: 3px;
     color: #fff;
-}
+} */
 
 .about-mv img{
     width: 90%;
@@ -1161,6 +1185,24 @@ picture img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.page-mv{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/koso_img01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.page-mv h2{
+    color: #fff;
+    font-size: 50px;
+    margin-right: 10%;
 }
 
 .flow-cnt{
