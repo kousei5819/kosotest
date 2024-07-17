@@ -55,10 +55,6 @@ img{
         display: block;
     }
 }
-
-p{
-    font-family: "M PLUS Rounded 1c", sans-serif;;
-}
 /* ーーーーーーーーーーーーー
 ボタン
 ーーーーーーーーーーーーー */
@@ -76,8 +72,9 @@ p{
 }
 
 .line-btn{
+    position: relative;
     display: inline-block;
-    width: 65%;
+    width: 100%;
     padding: min(1.2vh, 20px) 0px;
     border-radius: 50px;
     background-color: #54433b;
@@ -85,6 +82,30 @@ p{
     font-size: min(5vw, 22px);
     text-align: center;
     max-width: 450px;
+}
+
+.line-btn::before{
+    display: block;
+    position: absolute;
+    content: "\f591";
+    color: #f2fedc;
+    font-size: 25px;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-family: "Material Symbols Outlined";
+}
+
+.news-item-btn{
+    display: inline-block;
+    width: 170px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: #54433b;
+    color: #f2fedc;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
 }
 
 
@@ -111,6 +132,10 @@ p{
         width: 105px;
         height: auto;
     }
+
+    .line-btn{
+        width: 65%;
+    }
 }
 
 /* ーーーーーーーーーーーーーー
@@ -119,7 +144,6 @@ p{
 
 header{
     width: 100%;
-    height: 90px;
     background-image: url(img/back_img.png);
     background-position: center;
     position: fixed;
@@ -158,10 +182,6 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        height: 70px;
-    }
-    
     .logo img{
         width: 140px;
         margin-left: 10px;
@@ -434,8 +454,8 @@ about
     flex: 1;
 }
 
-.about-box01-text h2,
-.about-box02-text h2{
+.about-box01-text h1,
+.about-box02-text h1{
     font-size: 30px;
     color: #342611;
 }
@@ -742,6 +762,10 @@ sns
     margin-top: 30px;
 }
 
+.access-veiw{
+    margin-bottom: 30px;
+}
+
 .access-img,
 .access-text{
     flex: 1;
@@ -779,6 +803,7 @@ sns
 .access-item,
 .access-item-01{
     padding-left: 30px;
+    color: #342611;
 }
 
 .access-item{
@@ -837,7 +862,22 @@ contact
 }
 
 .con-box{
-    text-align: center;
+    width: 90vw;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.con-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.con-box-title,
+.con-btn{
+    flex: 1;
 }
 
 .con-box-title h1{
@@ -856,6 +896,7 @@ contact
 
 .con-btn{
     margin-top: 15px;
+    text-align: right;
 }
 
 @media screen and (max-width: 768px){
@@ -863,6 +904,21 @@ contact
         font-size: 12px;
         width: 70vw;
         margin: 0 auto;
+    }
+
+    .con-box-title{
+        text-align: center;
+    }
+
+    .con-flex{
+        display: block;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .con-btn{
+        text-align: center;
     }
 }
 
@@ -891,11 +947,12 @@ picture img{
     width: 100%;
     height: auto;
     object-fit: contain;
-    line-height: 0;
+    transform: translateY(1px);
 }
 
 .pic02 img{
     vertical-align: top;
+    transform: translateY(-1px)!important;
 }
 
 
@@ -923,7 +980,7 @@ picture img{
 
 .page-mv-about{
     width: 100%;
-    height: 500px;
+    height: min(50vh, 400px);
     background-image: url(img/DSC02249.jpg);
     background-position: center;
     background-size: cover;
@@ -931,12 +988,13 @@ picture img{
     display: flex;
     align-items: center;
     justify-content: baseline;
+    border-bottom-right-radius: 50px;
 }
 
 .page-mv-about h2{
     color: #fff;
-    font-size: 50px;
-    margin-left: 10%;
+    font-size: min(8vw, 45px);
+    margin-left: 7%;
 }
 
 /* .page-head h2{
@@ -1188,21 +1246,22 @@ picture img{
 }
 
 .page-mv{
-    width: 100%;
-    height: 500px;
     background-image: url(img/koso_img01.jpg);
+    width: 100%;
+    height: min(50vh, 400px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: end;
+    border-bottom-right-radius: 50px;
 }
 
 .page-mv h2{
     color: #fff;
-    font-size: 50px;
-    margin-right: 10%;
+    font-size: min(8vw, 45px);
+    margin-right: 7%;
 }
 
 .flow-cnt{
@@ -1212,6 +1271,9 @@ picture img{
 .flow-item-box{
     display: flex;
     background-image: url(img/back_img02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     margin-top: 100px;
     align-items: center;
@@ -1265,6 +1327,7 @@ picture img{
     .flow-item-img img{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
     }
 }
 
@@ -1272,68 +1335,73 @@ picture img{
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 お客様の声
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.voice-box{
-    margin: 50px auto 0 auto;
-}
-
-.voice-type{
-    margin-top: 10px;
-}
-
-/* 吹き出し本体 */
-.balloon,
-.balloon-left{
-    position: relative;
-    padding: 20px;
-    background-image: url(img/back_img02.png);
-    border-radius: 10px;
-    box-shadow: 6px 6px 0px 0px #DBCDAD;         /* 吹き出し本体の影 */
-    width: 70%;
-}
-/* 三角アイコン */
-.balloon::before,
-.balloon-left::before{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    left: 27px;
-    bottom: -18px;
-    border-top: 15px solid #DBCDAD;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-}
-/* 三角アイコンの影 */
-.balloon::after,
-.balloon-left::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    left: 20px;
-    bottom: -15px;
-    border-top: 15px solid #d1bb9e;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-}
-
-.balloon{
-    margin: 0 0 0 auto;
-}
-
-.balloon-left{
-    margin: 50px auto 0 0;
-}
 
 .voice-btn{
     text-align: center;
     margin-top: 50px;
 }
 
-.voice-btn a{
-    box-shadow: 5px 5px 0px 0px #DBCDAD;
+.voice-box{
+    display: flex;
+    gap: 30px;
+    margin: 50px auto 0 auto;
+}
+
+.voice-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/back_img02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 50px;  
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.profile,
+.voice-flex{
+    flex: 1;
+}
+
+.profile{
+    text-align: center;
+}
+
+.profile-text{
+    flex: 2;
+    line-height: 1.6;
+}
+
+.profile img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px){
+    .voice-box{
+        display: block;
+    }
+    .voice-flex:last-child{
+        margin-top: 50px;
+    }
+
+    .voice-flex{
+        padding: 20px 30px;  
+    }
+
+    .profile-text{
+        font-size: 14px;
+    }
+
+    .profile img{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -1375,3 +1443,20 @@ picture img{
     font-size: 16px;
 }
 
+.news-btn-box{
+    margin: 100px auto 50px auto;
+    text-align: center;
+}
+
+.blog-cont{
+    display: block;
+}
+
+.blog-photo img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.bolg-text{
+    margin-top: 50px;
+}
