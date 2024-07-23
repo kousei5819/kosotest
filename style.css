@@ -16,10 +16,6 @@ body{
     background-image: url(img/back_img.png);
 }
 
-main{
-    position: relative;
-}
-
 img{
     width: 100%;
     vertical-align: bottom;
@@ -157,7 +153,7 @@ header{
 }
 
 .logo{
-    z-index: 9999;
+    z-index: 999;
 }
 
 .logo img{
@@ -980,7 +976,7 @@ picture img{
 
 .page-mv-about{
     width: 100%;
-    height: min(50vh, 400px);
+    height: min(50vh, 250px);
     background-image: url(img/DSC02249.jpg);
     background-position: center;
     background-size: cover;
@@ -1248,7 +1244,7 @@ picture img{
 .page-mv{
     background-image: url(img/koso_img01.jpg);
     width: 100%;
-    height: min(50vh, 400px);
+    height: min(50vh, 250px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
