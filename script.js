@@ -42,7 +42,7 @@ const swiper = new Swiper(".js-swiper-container", {
     speed: 500,
     loop: true,
     effect: "fade",
-  });
+});
 
 
 const animateFade = (entries, obs) => {

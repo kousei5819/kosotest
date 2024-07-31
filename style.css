@@ -309,7 +309,7 @@ header{
 
 .news-cnt{
     max-width: 980px;
-    width: 70vw;
+    width: 75vw;
     margin: 0 auto;
     display: flex;
     gap: 10vw;
@@ -317,6 +317,7 @@ header{
 
 .news-title h1{
     margin-bottom: 20px;
+    color: #342611;
 }
 
 .news-title h1,
@@ -325,9 +326,9 @@ header{
 }
 
 .news-btn{
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid#342611;;
     padding-bottom: 5px;
-    color: #333;
+    color: #342611;
     font-size: 13px;
 }
 
@@ -356,7 +357,7 @@ header{
 }
 
 .news-text{
-    color: #333;
+    color: #342611;
     font-size: 16px;
     font-weight: normal;
 }
@@ -538,14 +539,14 @@ about
     }
 
     .about-box01-text::after{
-        width: 95%;
+        width: 100%;
         height: 90%;
         top: 55%;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
     .about-box02-text::before{
-        width: 95%;
+        width: 100%;
         height: 90%;
         top: 55%;
         border-top-left-radius: 0px;
@@ -975,8 +976,8 @@ picture img{
 } */
 
 .page-mv-about{
-    width: 100%;
-    height: min(50vh, 250px);
+    width: 90%;
+    height: min(40vh, 400px);
     background-image: url(img/DSC02249.jpg);
     background-position: center;
     background-size: cover;
@@ -984,12 +985,13 @@ picture img{
     display: flex;
     align-items: center;
     justify-content: baseline;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
+    margin: 20px auto 0 auto;
 }
 
 .page-mv-about h2{
     color: #fff;
-    font-size: min(8vw, 45px);
+    font-size: min(7vw, 40px);
     margin-left: 7%;
 }
 
@@ -1011,7 +1013,7 @@ picture img{
 .about-p-box01,
 .about-p-box02,
 .about-p-box03{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .about-p-box01,
@@ -1026,6 +1028,7 @@ picture img{
 
 .about-p-text{
     flex: 2;
+    color: #342611;
 }
 
 .about-p-text p{
@@ -1048,6 +1051,7 @@ picture img{
 
 .box03-head{
     font-size: 30px;
+    color: #342611;
 }
 
 .about-p-box03-text{
@@ -1071,11 +1075,14 @@ picture img{
 .box3-item h2{
     margin: 20px 0 20px 0;
     font-size: 22px;
+    color: #342611;
 }
 
 .box3-item p{
-    line-height: 1.7;
-    font-size: 16px;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #342611;
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px){
@@ -1090,6 +1097,12 @@ picture img{
     
     .about-p-box03-text{
         grid-template-columns: auto;
+    }
+
+    .about-p-box01,
+    .about-p-box02,
+    .about-p-box03{
+        margin-top: 80px;
     }
 }
 
@@ -1114,6 +1127,7 @@ picture img{
 
 .fee-head h2{
     font-size: 35px;
+    color: #342611;
 }
 
 .fee-item01{
@@ -1122,6 +1136,7 @@ picture img{
     border-radius: 15px;
     width: 100%;
     margin: 50px 0 0 0;
+    color: #342611;
 }
 
 .fee-item02{
@@ -1130,6 +1145,7 @@ picture img{
     border-radius: 15px;
     width: 100%;
     margin: 10px 0;
+    color: #342611;
 }
 
 .fee-item-box01,
@@ -1151,6 +1167,7 @@ picture img{
 
 .fee-item-box{
     margin-top: 50px;
+    color: #342611;
 }
 
 .fee-item-box02,
@@ -1176,6 +1193,7 @@ picture img{
 
 .cancel-box{
     margin-top: 80px;
+    color: #342611;
 }
 
 .cancel-head{
@@ -1243,20 +1261,21 @@ picture img{
 
 .page-mv{
     background-image: url(img/koso_img01.jpg);
-    width: 100%;
-    height: min(50vh, 250px);
+    width: 90%;
+    height: min(50vh, 400px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: end;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
+    margin: 20px auto 0 auto;
 }
 
 .page-mv h2{
     color: #fff;
-    font-size: min(8vw, 45px);
+    font-size: min(6vw, 40px);
     margin-right: 7%;
 }
 
@@ -1300,7 +1319,8 @@ picture img{
 }
 
 .flow-head02{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .flow-item-text p{
@@ -1317,7 +1337,7 @@ picture img{
     }
 
     .flow-item-text{
-        padding: 20px;
+        padding: 30px 20px;
     }
 
     .flow-item-img img{
@@ -1338,9 +1358,9 @@ picture img{
 }
 
 .voice-box{
-    display: flex;
     gap: 30px;
     margin: 50px auto 0 auto;
+    display: flex;
 }
 
 .voice-flex{
@@ -1351,13 +1371,9 @@ picture img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 50px;  
+    padding: 20px 30px;  
     border-radius: 30px;
-    gap: 20px;
-}
-
-.profile,
-.voice-flex{
+    gap: 50px;
     flex: 1;
 }
 
@@ -1407,7 +1423,7 @@ picture img{
 .news-box-cnt{
     max-width: 768px;
     margin: 100px auto;
-    color: #3D392D;
+    color: #342611;
 }
 
 
@@ -1418,10 +1434,9 @@ picture img{
 }
 
 .news-box-head{
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
     padding-bottom: 5px;
-    border-bottom: 1px solid #3D392D;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .news-box-img{
@@ -1435,13 +1450,24 @@ picture img{
 
 .news-box-text{
     margin-top: 20px;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 16px;
+    text-align: justify;
 }
 
 .news-btn-box{
     margin: 100px auto 50px auto;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .news-box-head{
+        font-size: 22px;
+    }
+    
+    .news-box-text,.news-box-date{
+        font-size: 14px;
+    }
 }
 
 .blog-cont{
@@ -1456,3 +1482,9 @@ picture img{
 .bolg-text{
     margin-top: 50px;
 }
+
+/* お客様の声テスト */
+.mgt50{
+    margin-top: 50px;
+}
+
