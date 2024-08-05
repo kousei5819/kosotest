@@ -236,7 +236,7 @@ header{
         background-image: url(img/back_img.png);
         z-index: 999;
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: 0;
         transition: all .6s;
     }
