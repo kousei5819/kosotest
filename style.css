@@ -238,7 +238,7 @@ header{
         position: fixed;
         top: -150%;
         left: 0;
-        transition: all .6s;
+        transition: all 1s;
     }
 
     #global_nav ul{
@@ -255,6 +255,7 @@ header{
 
     #global_nav.h-active{
         top: 0;
+        transition: all .8s;
     }
 
     .burger.h-active span:first-child{
