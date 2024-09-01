@@ -45,11 +45,32 @@ img{
     opacity: 0;
 }
 
-
+.mgt10{
+    margin-top: 10px;
+}
+.mgt20{
+    margin-top: 20px;
+}
+.mgt30{
+    margin-top: 30px;
+}
+.mgt40{
+    margin-top: 40px;
+}
+.mgt50{
+    margin-top: 50px;
+}
+.mgt80{
+    margin-top: 80px;
+}
 
 @media screen and (max-width: 465px){
     .sp-br{
         display: block;
+    }
+
+    .container{
+        margin: 50px auto 0 auto;
     }
 }
 /* ーーーーーーーーーーーーー
@@ -72,7 +93,7 @@ img{
     position: relative;
     display: inline-block;
     width: 100%;
-    padding: min(1.2vh, 20px) 0px;
+    padding: min(1vh, 20px) 0px;
     border-radius: 50px;
     background-color: #54433b;
     color: #f2fedc;
@@ -131,7 +152,8 @@ img{
     }
 
     .line-btn{
-        width: 65%;
+        width: 40%;
+        margin-top: 20px;
     }
 }
 
@@ -145,7 +167,6 @@ header{
     background-position: center;
     position: fixed;
     z-index: 111;
-    height: 100px;
 }
 
 .header-cnt{
@@ -180,12 +201,13 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        height: 70px;
+
+    .header-cnt{
+        margin: 0 5px;
     }
     
     .logo img{
-        width: 140px;
+        width: 160px;
         margin-left: 10px;
     }
     
@@ -246,9 +268,7 @@ header{
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-
         align-items: center;
-        
     }
 
     /* h-activeがついている時 */
@@ -518,14 +538,14 @@ about
 
     .about-box01,
     .about-box02{
-        flex-direction: column;
+        display: block;
         padding: 0 0 50px 0;
     }
 
     .about-box01-text,
     .about-box02-text{
         width: 75vw;
-        margin: 0 auto;
+        margin: 7% auto 0;
     }
 
     .about-box01-img img{
@@ -607,8 +627,8 @@ sns
 .sns-box-title{
     text-align: center;
     margin: 0 auto;
-    padding: 0 0 20px 0;
-    font-size: 30px;
+    padding-bottom: 50px;
+    font-size: 27px;
 }
 
 .sns-box-title h1{
@@ -632,9 +652,8 @@ sns
         left: 15vw;
         width: 8%;
     }
-
     .sns-box-title{
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
@@ -660,7 +679,7 @@ sns
 
 @media screen and (max-width: 768px) {
     .insta_list{
-        width: 100%;
+        width: 80%;
     }
     
     .insta_list li {
@@ -691,7 +710,7 @@ sns
 
 .insta-btn-box{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* ーーーーーーーーーーー
@@ -724,7 +743,7 @@ sns
 @media screen and (max-width: 768px) {
     .blog-flex{
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     .blog-img{
@@ -738,7 +757,7 @@ sns
 
 .access-cnt{
     width: 90vw;
-    margin: 50px auto;
+    margin: 100px auto;
     max-width: 1300px;
 }
 
@@ -1017,10 +1036,9 @@ picture img{
     position: relative;
 }
 
-.about-p-box01,
 .about-p-box02,
 .about-p-box03{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .about-p-box01,
@@ -1121,10 +1139,6 @@ picture img{
 .fee-mv img{
     width: 100%;
     height: auto;
-}
-
-.fee-box{
-    margin: 80px auto;
 }
 
 .fee-head,
@@ -1297,7 +1311,6 @@ picture img{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    margin-top: 100px;
     align-items: center;
 }
 
@@ -1429,7 +1442,7 @@ picture img{
 
 .news-box-cnt{
     max-width: 768px;
-    margin: 100px auto;
+    margin: 0px auto;
     color: #342611;
 }
 
@@ -1475,6 +1488,10 @@ picture img{
     .news-box-text,.news-box-date{
         font-size: 14px;
     }
+
+    .news-btn-box{
+        margin-top: 50px;
+    }
 }
 
 .blog-cont{
@@ -1491,7 +1508,5 @@ picture img{
 }
 
 /* お客様の声テスト */
-.mgt50{
-    margin-top: 50px;
-}
+
 
