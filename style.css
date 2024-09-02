@@ -1391,11 +1391,12 @@ picture img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 30px;  
+    padding: 5% 8%;  
     border-radius: 30px;
-    gap: 50px;
-    flex: 1;
+    gap: 60px;
+    margin-top: 70px;
 }
+
 
 .profile{
     text-align: center;
@@ -1406,12 +1407,32 @@ picture img{
     line-height: 1.6;
 }
 
+.profile-text>p{
+    margin-top: 12px;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: 1.8;
+}
+
 .profile img{
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.line{
+    width: 1px;
+    height: 120px;
+    background-color: #8a7558;
+}
+
+.voice-type{
+    margin-top: 15px;
+}
+.profile-text-ttl{
+    font-family: "Zen Kurenaido", sans-serif;
+    font-size: clamp(17px, 3.2vw,24px);
 }
 
 @media screen and (max-width: 768px){
@@ -1423,16 +1444,23 @@ picture img{
     }
 
     .voice-flex{
-        padding: 20px 30px;  
+        padding: 18px 12px;  
+        gap: 25px;
+        margin-top: 50px;
     }
-
+    .line{
+        display: none;
+    }
     .profile-text{
         font-size: 14px;
     }
 
     .profile img{
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
+    }
+    .voice-type{
+        font-size: 14px;
     }
 }
 
