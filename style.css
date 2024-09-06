@@ -92,7 +92,7 @@ img{
 .line-btn{
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 80%;
     padding: min(1vh, 20px) 0px;
     border-radius: 50px;
     background-color: #54433b;
@@ -152,7 +152,7 @@ img{
     }
 
     .line-btn{
-        width: 40%;
+        width: 70%;
         margin-top: 20px;
     }
 }
@@ -173,6 +173,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    margin: 0 50px;
 }
 
 .logo{
@@ -182,16 +183,11 @@ header{
 .logo img{
     width: 200px;
     height: auto;
-    margin-left: 30px;
     vertical-align: top;
 }
 
 .burger{
     display: none;
-}
-
-.header-nav{
-    margin-right: 30px;
 }
 
 .nav-li a{
@@ -203,7 +199,7 @@ header{
 @media screen and (max-width: 768px) {
 
     .header-cnt{
-        margin: 0 5px;
+        margin: 0 15px;
     }
     
     .logo img{
@@ -342,12 +338,14 @@ header{
     gap: 10vw;
 }
 
-.news-title h1{
+.news-head{
     margin-bottom: 20px;
     color: #342611;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-.news-title h1,
+.news-head,
 .news-btn{
     white-space: nowrap;
 }
@@ -395,7 +393,7 @@ header{
         gap: 0;
     }
 
-    .news-title h1{
+    .news-head{
         font-size: 23px;
         margin-bottom: 10px;
     }
@@ -478,10 +476,10 @@ about
     flex: 1;
 }
 
-.about-box01-text h1,
-.about-box02-text h1{
+.abotu-txt-ttl{
     font-size: 30px;
     color: #342611;
+    font-weight: bold;
 }
 
 .about-box01-img img,
@@ -631,24 +629,26 @@ sns
     font-size: 27px;
 }
 
-.sns-box-title h1{
+.sns-box-title{
     font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 
 
-.sns-box-title h1,
-.con-box-title h1{
+.sns-box-title,
+.con-box-title div{
     color: #F2FEDC;
     position: relative;
 }
 
 @media screen and (max-width: 768px){
-    .sns-box-title h1::after{
+    .sns-box-title::after{
         right: 15vw;
         width: 8%;
     }
-    .sns-box-title h1::before{
+    .sns-box-title::before{
         left: 15vw;
         width: 8%;
     }
@@ -679,7 +679,7 @@ sns
 
 @media screen and (max-width: 768px) {
     .insta_list{
-        width: 80%;
+        width: 90%;
     }
     
     .insta_list li {
@@ -773,9 +773,10 @@ sns
     border-radius: 30px;
 }
 
-.access-title h1{
+.access-title{
     font-size: 30px;
     color: #342611;
+    font-weight: bold;
 }
 
 .access-box{
@@ -881,12 +882,14 @@ contact
 .con-cnt{
     background-image: url(img/back_img08.png);
     background-repeat: repeat;
-    padding: 40px 0 50px 0;
+    padding: 80px 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .con-box{
     width: 90vw;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -899,14 +902,16 @@ contact
 }
 
 .con-box-title,
+.con-title,
 .con-btn{
     flex: 1;
 }
 
-.con-box-title h1{
+.con-box-title{
     font-size: 40px;
     color: #F2FEDC;
     font-family: "Nunito", sans-serif;
+    font-weight: bold;
 }
 
 .con-text{
@@ -1444,7 +1449,7 @@ picture img{
     }
 
     .voice-flex{
-        padding: 18px 12px;  
+        padding: 18px 20px;  
         gap: 25px;
         margin-top: 50px;
     }
